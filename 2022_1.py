@@ -1,6 +1,8 @@
 # https://adventofcode.com/2022/day/1
 # https://adventofcode.com/2022/day/1/input
 
+# Added newline at the end of the input to make it easy
+
 current_sum = 0
 list_of_sums = []
 
