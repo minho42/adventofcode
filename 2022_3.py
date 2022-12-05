@@ -24,7 +24,7 @@ def part1():
             if x in second:
                 return x
 
-    with open("2022_3_input.txt") as file:
+    with open("2022_3.in") as file:
         for line in file:
             line = line.replace("\n", "")
             common_items.append(find_common_item(line))
@@ -47,7 +47,7 @@ def part2():
             if x in second and x in third:
                 return x
 
-    with open("2022_3_input.txt") as file:
+    with open("2022_3.in") as file:
         lines = []
         for index, line in enumerate(file):
             line = line.replace("\n", "")

@@ -14,7 +14,7 @@ drawing_conditions = ["AA", "BB", "CC"]
 
 occurrence_counts = {}
 
-with open("2022_2_input.txt") as file:
+with open("2022_2.in") as file:
     for line in file:
         line = line.replace("\n", "")
         line = line.replace(" ", "")

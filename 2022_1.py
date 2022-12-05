@@ -6,7 +6,7 @@
 current_sum = 0
 list_of_sums = []
 
-with open("2022_1_input.txt") as file:
+with open("2022_1.in") as file:
     for line in file:
         line = line.replace("\n", "")
         if line:

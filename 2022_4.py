@@ -1,6 +1,6 @@
 from utils import read_input
 
-lines = read_input("2022_4_input.txt")
+lines = read_input("2022_4.in")
 
 
 def p1():
