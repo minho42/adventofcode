@@ -1,6 +1,6 @@
 from utils import read_input
 
-d = read_input("2022_6.in")[0]
+d = read_input("2022_6.in")
 
 
 def p(n):
