@@ -1,7 +1,7 @@
 from utils import read_input
 from collections import deque
 
-lines = read_input("2022_5.in")
+lines = read_input("5.in")
 
 
 def p1():
