@@ -44,4 +44,39 @@ def p1():
     print(count)
 
 
+def get_score(li, me):
+    if not li:
+        return 0
+
+    if me > max(li):
+        return len(li)
+
+    for i, x in enumerate(li, 1):
+        if x >= me:
+            return i
+
+
+def p2():
+    max_score = 0
+    for i in range(len(lines)):
+        for j in range(len(lines[i])):
+            score = 0
+
+            me = lines[i][j]
+            li_left = list(lines[i][:j])
+            li_left.reverse()
+            li_right = list(lines[i][j + 1 :])
+            li_up = [lines[x][j] for x in range(i + 1) if x < i]
+            li_up.reverse()
+            li_down = [lines[x][j] for x in range(len(lines)) if x > i]
+
+            score = get_score(li_left, me) * get_score(li_right, me) * get_score(li_up, me) * get_score(li_down, me)
+
+            if score > max_score:
+                max_score = score
+
+    print(max_score)
+
+
 p1()
+p2()
