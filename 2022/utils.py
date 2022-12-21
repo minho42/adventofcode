@@ -1,4 +1,7 @@
-def read_input(path: str) -> list:
+from typing import Union
+
+
+def read_input(path: str) -> Union[list, str]:
     with open(path, "r") as f:
         contents = f.read()
         lines = contents.split("\n")
