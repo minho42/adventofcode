@@ -1,6 +1,6 @@
 from utils import read_input
 
-lines = read_input("8.in")
+lines = read_input("08.in")
 
 
 def is_edge(d, i, j):

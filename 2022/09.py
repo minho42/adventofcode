@@ -1,6 +1,6 @@
 from utils import read_input
 
-lines = read_input("9.in")
+lines = read_input("09.in")
 
 
 def right(a):

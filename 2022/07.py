@@ -1,7 +1,7 @@
 from pprint import pprint
 from utils import read_input
 
-lines = read_input("7.in")
+lines = read_input("07.in")
 
 
 class Node:
