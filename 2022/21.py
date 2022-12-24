@@ -1,5 +1,4 @@
 import re
-from sympy import Symbol
 from sympy.solvers import solve
 from utils import read_input
 
@@ -21,6 +20,7 @@ def f(x):
 
 p1 = f("root")
 p1 = eval(p1)
+# print(p1)
 p1 = int(p1)
 print(p1)
 
@@ -34,10 +34,11 @@ def f2(x):
     return f"({f2(m[1])}) {m[2]} ({f2(m[3])})"
 
 
-# root = x + humn
-# x = root - humn
+# root: x  ==  y
+# --> 0 == y - x
 d["root"] = d["root"].replace("+", "-")
 d["humn"] = "humn"
 p2 = f2("root")
+# print(p2)
 p2 = solve(p2)[0]
 print(p2)
