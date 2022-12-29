@@ -7,8 +7,8 @@ def p(cycle, key):
     d = []
 
     for i, line in enumerate(lines):
-        # Saves original index (order for movement) for item as a tuple in a list
-        # e.g. [(1, 0), (2, 1), (-3, 2), (3, 3), (-2, 4), (0, 5), (4, 6)]
+        # Save original index (order for movement) for items
+        # e.g. [1, 2, -3, 3, -2, 0, 4] -> [(1, 0), (2, 1), (-3, 2), (3, 3), (-2, 4), (0, 5), (4, 6)]
         d.append((int(line) * key, i))
 
     def find_next_item(i):
