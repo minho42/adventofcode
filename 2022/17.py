@@ -94,7 +94,10 @@ def get_new_rock(i):
 
 
 def is_landed(r):
-    return any([x for x in r if x in landed_rocks])
+    for x in r:
+        if x in landed_rocks:
+            return True
+    return False
 
 
 def move_horizontally(r, wi):
